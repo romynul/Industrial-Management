@@ -19,6 +19,11 @@ app.use(bodyParser.urlencoded({'extended': false}));
 app.use(expressSession({secret: 'my top secret password', saveUninitialized: true, resave: false}));
 app.use(cookieParser());
 app.use('/xyz', express.static('pqr'));
+app.use('/asset', express.static('assets/css'));
+app.use('/img', express.static('assets/img'));
+app.use('/jsscript', express.static('assets/js'));
+
+
 
 app.use('/login', login);
 app.use('/logout', logout);

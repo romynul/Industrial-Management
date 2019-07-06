@@ -3,16 +3,20 @@ var user = require.main.require('./models/user-model');
 var router = express.Router();
 
 
-router.get('*', function(req, res, next){
-	if(req.session.un != null){
-		next();
-	}else{
-		res.redirect('/login');
-	}
-});
+// router.get('*', function(req, res, next){
+// 	if(req.session.un != null){
+// 		next();
+// 	}else{
+// 		res.redirect('/login');
+// 	}
+// });
 
 router.get('/', function(req, res){
 	res.render('home/index');
+});
+
+router.get('/employee', function(req, res){
+	res.render('home/employee');
 });
 
 router.get('/user_list', function(req, res){
