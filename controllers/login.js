@@ -4,7 +4,11 @@ var router = express.Router();
 
 
 router.get('/', function(req, res){
-	res.render('login/index');
+	res.render('home/index');
+});
+
+router.get('/employee', function(req, res){
+	res.render('home/employee');
 });
 
 router.post('/', function(req, res){
