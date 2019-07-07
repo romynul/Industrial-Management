@@ -15,7 +15,7 @@ router.get('/', function(req, res){
 	res.render('dashboard/index');
 });
 
-router.get('/addemployee', function(req, res){
+router.get('/add_employee', function(req, res){
 	res.render('dashboard/addemployee');
 });
 
@@ -31,20 +31,28 @@ router.get('/project', function(req, res){
 	res.render('dashboard/project');
 });
 
-router.get('/addlabour', function(req, res){
-	res.render('dashboard/addlabour');
+router.get('/add_labour', function(req, res){
+	res.render('dashboard/add_labour');
 });
 
 router.get('/labour', function(req, res){
 	res.render('dashboard/labour');
 });
 
-router.get('/addsupplier', function(req, res){
+router.get('/add_supplier', function(req, res){
 	res.render('dashboard/addsupplier');
 });
 
 router.get('/supplier', function(req, res){
 	res.render('dashboard/supplier');
+});
+
+router.get('/add_client', function(req, res){
+	res.render('dashboard/add_client');
+});
+
+router.get('/client', function(req, res){
+	res.render('dashboard/client');
 });
 
 router.get('/add_expense', function(req, res){
