@@ -1,10 +1,10 @@
 var mysql = require('mysql');
 
 var confiq = {
-  host     : 'localhost',
+  host     : '127.0.0.1',
   user     : 'root',
   password : '',
-  database : 'node1'
+  database : 'ims'
 };
 
 var getConnection = function(callback){

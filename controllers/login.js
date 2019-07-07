@@ -4,30 +4,40 @@ var router = express.Router();
 
 
 router.get('/', function(req, res){
-	res.render('home/index');
+	res.render('home/auth-login-2');
 });
 
-router.get('/employee', function(req, res){
-	res.render('home/employee');
+router.get('/dashboard', function(req, res){
+	res.render('dashboard');
 });
+
+router.get('/auth-register', function(req, res){
+	res.render('home/auth-register');
+});
+
+
+
 
 router.post('/', function(req, res){
 	
 	var data = {
-		username: req.body.username,
+		email: req.body.email,
 		password: req.body.password
 	};
 
 	user.validate(data, function(status){
 		if(status){
-			req.session.un = req.body.username;
-			res.redirect('/home');
+			req.session.email = req.body.email;
+			res.redirect('/dashboard');
 		}else{
-			res.send('invalid username/password...');
+			res.send('invalid email/password...');
 		}
 	});
 
 });
+
+
+
 
 
 module.exports = router;
