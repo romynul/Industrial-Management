@@ -16,7 +16,7 @@ router.get('/', function(req, res){
 });
 
 router.get('/add_employee', function(req, res){
-	res.render('dashboard/addemployee');
+	res.render('dashboard/add_employee');
 });
 
 router.get('/employee', function(req, res){
@@ -40,7 +40,7 @@ router.get('/labour', function(req, res){
 });
 
 router.get('/add_supplier', function(req, res){
-	res.render('dashboard/addsupplier');
+	res.render('dashboard/add_supplier');
 });
 
 router.get('/supplier', function(req, res){
