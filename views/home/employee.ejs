@@ -33,8 +33,8 @@
         </form>
       
           <li class="dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle nav-link-lg nav-link-user">
-            <img alt="image" src="img/avatar/avatar-1.png" class="rounded-circle mr-1">
-            <div class="d-sm-none d-lg-inline-block">Hi, Wahid NJ</div></a>
+            <img alt="image" src="../img/avatar/avatar-1.png" class="rounded-circle mr-1">
+            <div class="d-sm-none d-lg-inline-block">Hi, RS</div></a>
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dropdown-title">Logged in 5 min ago</div>
               <a href="features-profile.html" class="dropdown-item has-icon">
@@ -54,42 +54,75 @@
           </li>
         </ul>
       </nav>
+      
       <div class="main-sidebar">
         <aside id="sidebar-wrapper">
           <div class="sidebar-brand">
-            <a href="index.html">Industrial Management</a>
+            <a href="/dashboard">Industrial Management</a>
           </div>
           <div class="sidebar-brand sidebar-brand-sm">
-            <a href="index.html">St</a>
+            <a href="/dashboard">St</a>
           </div>
+
           <ul class="sidebar-menu">
-              <li class="menu-header">Dashboard</li>
+              <li class="menu-header">Admin</li>
               <li class="nav-item dropdown active">
-                <a href="#" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                <a href="/dashboard" class="nav-link"><i class="fas fa-fire"></i><span>Dashboard</span></a>
               </li>
-              <li class="menu-header">Starter</li>
+              <li class="menu-header">Menu</li>
               <li class="nav-item dropdown">
-                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Employee</span></a>
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user-tie"></i> <span>Employee</span></a>
                 <ul class="dropdown-menu">
-                  <li><a class="nav-link" href="layout-default.html">Add Employee</a></li>
-                  <li><a class="nav-link" href="layout-top-navigation.html">Employee History</a></li>
+                  <li><a class="nav-link" href="/dashboard/add_employee">Add Employee</a></li>
+                  <li><a class="nav-link" href="/dashboard/employee">Employee List</a></li>
                 </ul>
               </li>
+
               <li class="nav-item dropdown">
-                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-columns"></i> <span>Project</span></a>
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-people-carry"></i> <span>Labour</span></a>
                 <ul class="dropdown-menu">
-                  <li><a class="nav-link" href="layout-default.html">Add Project</a></li>
-                  <li><a class="nav-link" href="layout-top-navigation.html">Running Project</a></li>
-                  <li><a class="nav-link" href="layout-top-navigation.html">Finished Project</a></li>
+                  <li><a class="nav-link" href="/dashboard/add_labour">Add Labour</a></li>
+                  <li><a class="nav-link" href="/dashboard/labour">Labour List</a></li>
                 </ul>
               </li>
-              <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Expense History</span></a></li>
-              <li><a class="nav-link" href="blank.html"><i class="far fa-square"></i> <span>Logs</span></a></li>
-             
-           
+
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-truck-moving"></i> <span>Supplier</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="/dashboard/add_supplier">Add Supplier</a></li>
+                  <li><a class="nav-link" href="/dashboard/supplier">Supplier List</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fas fa-user-secret"></i> <span>Client</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="/dashboard/add_client">Add Client</a></li>
+                  <li><a class="nav-link" href="/dashboard/client">Client List</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fab fa-r-project"></i> <span>Project</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="/dashboard/add_project">Add Project</a></li>
+                  <li><a class="nav-link" href="/dashboard/project">Project List</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link has-dropdown" data-toggle="dropdown"><i class="fab fa-r-project"></i> <span>Expense</span></a>
+                <ul class="dropdown-menu">
+                  <li><a class="nav-link" href="/dashboard/add_expense">Add Expense</a></li>
+                  <li><a class="nav-link" href="/dashboard/expense">Expense History</a></li>
+                </ul>
+              </li>
+
+              <li><a class="nav-link" href="/dashboard/logs"><i class="fas fa-history"></i> <span>Logs</span></a></li>
+        
             <div class="mt-4 mb-4 p-3 hide-sidebar-mini">
-              <a href="https://getstisla.com/docs" class="btn btn-primary btn-lg btn-block btn-icon-split">
-                <i class="fas fa-rocket"></i> Documentation
+              <a href="/logout" class="btn btn-primary btn-lg btn-block btn-icon-split">
+                <i class="fas fa-rocket"></i> Logout
               </a>
             </div>
         </aside>
@@ -111,57 +144,38 @@
                   <div class="table-responsive table-invoice">
                     <table class="table table-striped">
                       <tr>
-                        <th>Invoice ID</th>
-                        <th>Customer</th>
-                        <th>Status</th>
-                        <th>Due Date</th>
+                        <th>ID</th>
+                        <th>Email</th>
+                        <th>Name</th>
+                        <th>Address</th>
+                        <th>Contact</th>
+                        <th>Job Type</th>
+                        <th>Salary</th>
                         <th>Action</th>
                       </tr>
-                      <tr>
-                        <td><a href="#">INV-87239</a></td>
-                        <td class="font-weight-600">Kusnadi</td>
-                        <td><div class="badge badge-warning">Unpaid</div></td>
-                        <td>July 19, 2018</td>
+                      
+
+                        <% for(var i=0; i < userList.length; i++){ %>
+
+                        <tr>
+
+                        <td class="font-weight-600"><%= userList[i].id %></td>
+                        <td><div class="badge badge-warning"><%= userList[i].email %></div></td>
+                        <td><%= userList[i].name %></td>
+                        <td><%= userList[i].address %></td>
+                        <td><%= userList[i].contact %></td>
+                        <td><%= userList[i].job %></td>
+                        <td><%= userList[i].salary %></td>
                         <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">INV-48574</a></td>
-                        <td class="font-weight-600">Hasan Basri</td>
-                        <td><div class="badge badge-success">Paid</div></td>
-                        <td>July 21, 2018</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">INV-76824</a></td>
-                        <td class="font-weight-600">Muhamad Nuruzzaki</td>
-                        <td><div class="badge badge-warning">Unpaid</div></td>
-                        <td>July 22, 2018</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">INV-84990</a></td>
-                        <td class="font-weight-600">Agung Ardiansyah</td>
-                        <td><div class="badge badge-warning">Unpaid</div></td>
-                        <td>July 22, 2018</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">Detail</a>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td><a href="#">INV-87320</a></td>
-                        <td class="font-weight-600">Ardian Rahardiansyah</td>
-                        <td><div class="badge badge-success">Paid</div></td>
-                        <td>July 28, 2018</td>
-                        <td>
-                          <a href="#" class="btn btn-primary">EDIT | DELETE</a>
-                        </td>
-                      </tr>
+                            <a href="/home/edit/<%= userList[i].id %>" class="btn btn-primary">EDIT</a> 
+                            <a href="" class="btn btn-primary">DELETE</a>
+                          </td>
+
+                        </tr>  
+
+                        <% } %>
+
+
                     </table>
                   </div>
                 </div>
@@ -172,7 +186,7 @@
         </div>
       <footer class="main-footer">
         <div class="footer-left">
-          Copyright &copy; 2018 <div class="bullet"></div> Design By <a href="https://nauval.in/">Muhamad Nauval Azhar</a>
+          Copyright &copy; 2019 <div class="bullet"></div> Design By <a href="https://romynul.com/">RS Dream It</a>
         </div>
         <div class="footer-right">
           2.3.0
@@ -196,10 +210,10 @@
   <script src="../node_modules/chocolat/dist/js/jquery.chocolat.min.js"></script>
 
   <!-- Template JS File -->
-  <script src="jsscript/scripts.js"></script>
-  <script src="jsscript/custom.js"></script>
+  <script src="../jsscript/scripts.js"></script>
+  <script src="../jsscript/custom.js"></script>
 
   <!-- Page Specific JS File -->
-  <script src="jsscript/page/index.js"></script>
+  <script src="../jsscript/page/index.js"></script>
 </body>
 </html>
