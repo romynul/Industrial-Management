@@ -1,6 +1,6 @@
 # Industrial Management System
 
-## 📌 Overview
+## Overview
 
 The Industrial Management System is a web-based application designed to support industrial and organisational operations by managing employees, payroll, resource allocation, costing, and reporting.
 
@@ -10,7 +10,7 @@ The goal of this project was to build a structured, data-driven solution that as
 
 ---
 
-## 🎯 Project Objectives
+## Project Objectives
 
 The system was designed to:
 
@@ -22,7 +22,7 @@ The system was designed to:
 
 ---
 
-## 🧠 Research & Design Foundation
+## Research & Design Foundation
 
 Before implementation, industry best practices were reviewed to understand:
 
@@ -38,24 +38,24 @@ This ensured the system design aligned with real-world operational needs rather 
 
 ---
 
-## 💡 Key Features
+## Key Features
 
-### 👥 Employee Management
+### Employee Management
 - Add, update, and manage employee records
 - Store department and role information
 - Maintain employee data securely
 
-### 💰 Payroll Management
+### Payroll Management
 - Payroll calculation based on attendance or defined rules
 - Store payroll history
 - Generate payroll summaries
 
-### 🏭 Resource & Cost Management
+### Resource & Cost Management
 - Track organisational resources
 - Allocate resources to departments or teams
 - Monitor cost implications
 
-### 📊 Reporting & Analytics
+### Reporting & Analytics
 - Department-wise cost breakdown
 - Attendance tracking reports
 - Payroll summaries
@@ -63,7 +63,7 @@ This ensured the system design aligned with real-world operational needs rather 
 
 ---
 
-## 🛠 Technology Stack
+## Technology Stack
 
 - **Frontend:** HTML, CSS, JavaScript
 - **Backend:** Node.js
@@ -74,7 +74,7 @@ The MVC architecture ensures separation of concerns, maintainability, and scalab
 
 ---
 
-## 📈 System Impact
+## System Impact
 
 This project demonstrates:
 
@@ -88,7 +88,7 @@ The system provides a foundation for organisations seeking to improve operationa
 
 ---
 
-## 📄 Future Improvements
+## Future Improvements
 
 - Advanced analytics dashboard
 - Role-based access control enhancement
@@ -96,8 +96,15 @@ The system provides a foundation for organisations seeking to improve operationa
 - API integration for accounting systems
 - Real-time reporting visualisation
 
+
 ---
 
-## 👨‍💻 Author
+## References
 
-Developed as part of a course project focused on building practical industrial management solutions aligned with operational and reporting needs.
+Heizer, J., Render, B., & Munson, C. (2017). *Operations management: Sustainability and supply chain management* (12th ed.). Pearson.
+
+Slack, N., Brandon-Jones, A., & Johnston, R. (2019). *Operations management* (9th ed.). Pearson.
+
+Stevenson, W. J. (2018). *Operations management* (13th ed.). McGraw-Hill Education.
+
+Gunasekaran, A., & Ngai, E. W. T. (2004). Information systems in supply chain integration and management. *European Journal of Operational Research*, 159(2), 269–295. https://doi.org/10.1016/j.ejor.2003.08.016
